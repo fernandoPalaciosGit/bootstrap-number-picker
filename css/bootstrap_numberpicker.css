@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+@media (min-width: 768px ) {
+    .numberpicker-container {
+        width: 50%;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px ) {
+    .numberpicker-container {
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
