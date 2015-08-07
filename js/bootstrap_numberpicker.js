@@ -18,7 +18,10 @@ numberPicker = {
     },
     decreaseNumber:function(selector){
         var value = parseInt(selector.val());
-        value -= 1;
-        selector.val(value);
+        if (value > 0) {
+            value -= 1;
+            selector.val(value);
+        }
+
     }
 };
