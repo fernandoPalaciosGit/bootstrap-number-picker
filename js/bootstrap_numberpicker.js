@@ -1,15 +1,15 @@
 numberPicker = {
     init:function(){
-        numberPicker.listenUI();
+        this.listenUI();
     },
     listenUI:function(){
         $('#numberpicker-increase-btn').on('click',function(){
-            numberPicker.increaseNumber($("#numberpicker-input"));
-        });
+            this.increaseNumber($("#numberpicker-input"));
+        }.bind(this));
 
         $('#numberpicker-decrease-btn').on('click',function(){
-            numberPicker.decreaseNumber($("#numberpicker-input"));
-        });
+            this.decreaseNumber($("#numberpicker-input"));
+        }.bind(this));
     },
     increaseNumber:function(selector) {
         var value = parseInt(selector.val());
